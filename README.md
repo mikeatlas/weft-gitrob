@@ -1,6 +1,6 @@
 # weft-gitrob
 
-weft-gitrob is a collection of scripts to make it possible to run the [gitrob](gitrob) tool locally, using only docker containers.
+weft-gitrob is a collection of scripts to make it possible to run the [gitrob](https://github.com/michenriksen/gitrob) tool locally, using only docker containers.
 
 ### Configuration
 
