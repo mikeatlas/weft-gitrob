@@ -17,7 +17,11 @@ Create your own `.env` file in the root of `weft-gitrob` directory. It needs the
     GH_TOKEN2=generate_your_token1
     GH_TOKEN3=generate_your_token1
 
-Where `generate_your_token` should be replaced with a few GitHub [personal access tokens](https://github.com/settings/tokens)
+Where `generate_your_token` should be replaced with a few GitHub [personal access tokens](https://github.com/settings/tokens), since I run this with "3000" threads in `start.sh`. I have no conclusive proof that this is any faster than 30 threads or that 3 tokens are needed versus one token at this many threads.
+
+### Pre-requirements
+    
+    Install and learn about [Docker](https://docs.docker.com/installation/mac/). As a result, you can skip learning about installing or running Ruby on Rails, which `gitrob` is built with and just run these dockerized container images. Neat.
 
 ### Builing
 
