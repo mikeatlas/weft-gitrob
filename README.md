@@ -5,21 +5,27 @@ weft-gitrob is a collection of scripts to make it possible to run the [gitrob](g
 ### Configuration
 
     % git clone git@github.com:weftio/weft-gitrob.git
+    cd weft-gitrob
+    touch .env
 
 Create your own `.env` file in the root of `weft-gitrob` directory. It needs the following values:
 
-    DB_USER=ask_somebody
-    DB_PASS=ask_somebody
-    GITHUB_ORG_NAME=ask_somebody
-    GH_TOKEN1=ask_somebody
-    GH_TOKEN2=ask_somebody
-    GH_TOKEN3=ask_somebody
+    DB_USER=gitrob
+    DB_PASS=your_choice
+    GITHUB_ORG_NAME=your_org
+    GH_TOKEN1=generate_your_token1
+    GH_TOKEN2=generate_your_token1
+    GH_TOKEN3=generate_your_token1
 
-Where `ask_somebody` should be replaced with values someone else should be able to provide you with.
+Where `generate_your_token` should be replaced with a few GitHub [personal access tokens](https://github.com/settings/tokens)
 
-### Running weft-gitrob Locally
+### Builing
 
-You can start weft-gitrob locally by running:
+    % docker-compose build
+
+### Running weft-gitrob locally
+
+You can start weft-gitrob locally, and have it launch the web results, by running:
 
     % docker-compose up && \
       open -a "Google Chrome" http://$(boot2docker ip):9393
