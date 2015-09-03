@@ -21,13 +21,13 @@ Where `generate_your_token` should be replaced with a few GitHub [personal acces
 
 ### Pre-requirements
     
-    Install and learn about [Docker](https://docs.docker.com/installation/mac/). As a result, you can skip learning about installing or running Ruby on Rails, which `gitrob` is built with and just run these dockerized container images. Neat.
+Install and learn about [Docker](https://docs.docker.com/installation/mac/). As a result, you can skip learning about installing or running Ruby on Rails, which `gitrob` is built with and just run these dockerized container images. Neat.
 
 ### Builing
 
     % docker-compose build
 
-### Running weft-gitrob locally
+### Running weft-gitrob
 
 You can start weft-gitrob locally, and have it launch the web results, by running:
 
